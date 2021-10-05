@@ -18,12 +18,7 @@ class TasksScreen extends StatelessWidget {
             builder: (context) => SingleChildScrollView(
               padding: EdgeInsets.only(
                   bottom: MediaQuery.of(context).viewInsets.bottom),
-              child: AddTaskScreen(
-                addTaskCallback: (newTitle) {
-                  // Provider.of<TaskData>(context).addTask(newTitle);
-                  Navigator.pop(context);
-                },
-              ),
+              child: AddTaskScreen(),
             ),
           );
         },
